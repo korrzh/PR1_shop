@@ -25,7 +25,6 @@ public class Main {
                 Thread thr = new Thread(new Customer(), String.valueOf(customers));
                 thr.start();
                 list.add(thr);
-//                new Thread(new Customer(), String.valueOf(customers)).start();
                 customers++;
                 try {
                     Thread.sleep(1000);
